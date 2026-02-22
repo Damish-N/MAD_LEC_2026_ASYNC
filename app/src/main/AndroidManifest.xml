@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".lesson4.LoadReyclerView"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -20,6 +23,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".lesson4.Lesson4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".lesson4.LoadListView"
+            android:exported="false" />
     </application>
 
 </manifest>

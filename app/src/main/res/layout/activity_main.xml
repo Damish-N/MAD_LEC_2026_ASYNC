@@ -24,5 +24,5 @@
         android:id="@+id/btnLesson4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lesson4" />
+        android:text="Lesson 04" />
 </LinearLayout>
