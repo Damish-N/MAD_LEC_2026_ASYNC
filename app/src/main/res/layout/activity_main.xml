@@ -25,4 +25,52 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Lesson 04" />
+
+    <Button
+        android:id="@+id/btnLesson4Test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lesson 04 Test" />
+
+    <Button
+        android:id="@+id/testBtnRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lesson Recycler" />
+
+    <Button
+        android:id="@+id/testBtnThread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lesson Tread" />
+
+    <Button
+        android:id="@+id/testAsyncTaskBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lesson Async Task" />
+
+    <Button
+        android:id="@+id/testContactActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lesson Contact Activity" />
+    <Button
+    android:id="@+id/testApiCall"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Lesson Contact Activity" />
+
+    <Button
+        android:id="@+id/testCallMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lesson Map Activity" />
+
+    <Button
+        android:id="@+id/testDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lesson DB Activity" />
+
 </LinearLayout>
