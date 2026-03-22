@@ -40,4 +40,25 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteDatabase database  = this.getReadableDatabase();
         return database.rawQuery("SELECT * FROM users",null);
     }
+
+    public boolean update(String name, String age){
+        SQLiteDatabase database = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("age",age);
+
+//        UPDATE users SET age=12
+//                WHERE name="damish"
+        int i = database.update("users",contentValues,"name=?",
+               new String[]{name});
+        return i > 0;
+
+    }
+
+    public boolean delete(String name){
+        SQLiteDatabase database = this.getWritableDatabase();
+        int i = database.delete("users",
+                "name=?", new String[]{name});
+
+        return i> 0;
+    }
 }

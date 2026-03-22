@@ -65,5 +65,37 @@ public class DBActivity extends AppCompatActivity {
                 }
         );
 
+        Button updateBtn = findViewById(R.id.updateBtn);
+
+        updateBtn.setOnClickListener(
+                view -> {
+                    boolean u = dbHelper.update(
+                            userName.getText().toString(),
+                            age.getText().toString());
+
+                    Toast.makeText(
+                            this,
+                            u ? "Updated ": "Failed",
+                            Toast.LENGTH_SHORT
+                    ).show();
+                }
+        );
+
+
+        Button delete = findViewById(R.id.deleteBtn);
+
+        delete.setOnClickListener(
+                view -> {
+                    boolean u = dbHelper.delete(
+                            userName.getText().toString());
+
+                    Toast.makeText(
+                            this,
+                            u ? "Deleted ": "Failed",
+                            Toast.LENGTH_SHORT
+                    ).show();
+                }
+        );
+
     }
 }
